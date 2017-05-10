@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20405" started-at="2017-05-09T13:23:09Z" finished-at="2017-05-09T13:23:30Z">
+  <suite name="Suite" duration-ms="20345" started-at="2017-05-10T08:36:23Z" finished-at="2017-05-10T08:36:43Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20405" started-at="2017-05-09T13:23:09Z" finished-at="2017-05-09T13:23:30Z">
+    <test name="Test" duration-ms="20345" started-at="2017-05-10T08:36:23Z" finished-at="2017-05-10T08:36:43Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@1f37ef1]" name="beforeTest" is-config="true" duration-ms="15492" started-at="2017-05-09T18:53:09Z" finished-at="2017-05-09T18:53:25Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@1f37ef1]" name="beforeTest" is-config="true" duration-ms="14611" started-at="2017-05-10T14:06:23Z" finished-at="2017-05-10T14:06:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:example.NewTest@1f37ef1]" name="f" duration-ms="3413" started-at="2017-05-09T18:53:25Z" finished-at="2017-05-09T18:53:28Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:example.NewTest@1f37ef1]" name="f" duration-ms="4028" started-at="2017-05-10T14:06:37Z" finished-at="2017-05-10T14:06:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@1f37ef1]" name="afterTest" is-config="true" duration-ms="1473" started-at="2017-05-09T18:53:28Z" finished-at="2017-05-09T18:53:30Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@1f37ef1]" name="afterTest" is-config="true" duration-ms="1694" started-at="2017-05-10T14:06:41Z" finished-at="2017-05-10T14:06:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
