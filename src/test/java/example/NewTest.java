@@ -21,7 +21,7 @@ public class NewTest {
 	WebDriver driver ;
   @Test
   public void f() {
-	  driver.get("http://localhost:8090/samplemaven/");
+	  driver.get("http://localhost:8090/webapp/");
 	  driver.findElement(By.xpath("//input[@type='text']")).sendKeys("test");
 	  getscreenshot("input1");
 	  driver.findElement(By.xpath("//input[@type='button']")).click();
