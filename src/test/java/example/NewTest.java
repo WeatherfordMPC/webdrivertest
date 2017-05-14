@@ -19,6 +19,7 @@ import org.testng.annotations.AfterTest;
 
 public class NewTest {
 	WebDriver driver ;
+	String userprofile ;
   @Test
   public void f() {
 	  driver.get("http://localhost:8090/webapp/");
@@ -35,7 +36,7 @@ public class NewTest {
 	  String imgname = strname + "_" + new SimpleDateFormat("ddMMMYYYYhhmmss").format(new Date()) + ".jpg";
 	  File scrfile =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		 try {
-			FileUtils.copyFile(scrfile, new File("D:\\SeleniumTest\\"+imgname));
+			FileUtils.copyFile(scrfile, new File(userprofile+"\\Screenshots\\"+imgname));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -43,7 +44,8 @@ public class NewTest {
   }
   @BeforeTest
   public void beforeTest() {
-	  System.setProperty("webdriver.chrome.driver", "D:\\SeleniumTest\\ChromeDriver\\Chromedriver.exe");
+	  userprofile = System.getenv("USERPROFILE");
+	  System.setProperty("webdriver.chrome.driver", userprofile+"\ChromeDriver\\Chromedriver.exe");
 	     driver = new ChromeDriver();
   }
 
