@@ -45,7 +45,7 @@ public class NewTest {
   }
   @BeforeTest
   public void beforeTest() {
-	  userprofile = System.getenv("HOME");
+	  userprofile = System.getenv("USERPROFILE");
 	  System.out.println("User Profile as per Java is "+userprofile);
 	  System.setProperty("webdriver.chrome.driver", userprofile+"\\ChromeDriver\\Chromedriver.exe");
 	     driver = new ChromeDriver();
