@@ -33,6 +33,7 @@ public class NewTest {
   
   public void getscreenshot(String strname)
   {
+	  System.out.println("User Profile as per Java is "+userprofile);
 	  String imgname = strname + "_" + new SimpleDateFormat("ddMMMYYYYhhmmss").format(new Date()) + ".jpg";
 	  File scrfile =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		 try {
@@ -45,6 +46,7 @@ public class NewTest {
   @BeforeTest
   public void beforeTest() {
 	  userprofile = System.getProperty("user.home");
+	  System.out.println("User Profile as per Java is "+userprofile);
 	  System.setProperty("webdriver.chrome.driver", userprofile+"\\ChromeDriver\\Chromedriver.exe");
 	     driver = new ChromeDriver();
   }
