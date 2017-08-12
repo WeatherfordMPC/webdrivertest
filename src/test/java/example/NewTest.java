@@ -27,7 +27,7 @@ public class NewTest {
 	  getscreenshot("input1");
 	  driver.findElement(By.xpath("//input[@type='button']")).click();
 	  getscreenshot("validation1");
-	  Assert.assertTrue(driver.getPageSource().contains("Recoreded"));
+	  Assert.assertTrue(driver.getPageSource().contains("Recorded"));
 	  
   }
   
