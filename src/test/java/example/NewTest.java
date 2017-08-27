@@ -22,7 +22,7 @@ public class NewTest {
 	String userprofile ;
   @Test
   public void f() {
-	  driver.get("http://localhost:8090/webapp/");
+	  driver.get("http://13.126.109.72:8080/webapp/");
 	  driver.findElement(By.xpath("//input[@type='text']")).sendKeys("test");
 	  getscreenshot("input1");
 	  driver.findElement(By.xpath("//input[@type='button']")).click();
